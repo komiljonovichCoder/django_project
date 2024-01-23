@@ -46,3 +46,6 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html', context={"names": names}) 
+
+def lesson(request):
+    return render(request, 'lesson.html', context={"nums": list(range(1, 11))})
